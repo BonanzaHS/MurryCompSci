@@ -1,1 +1,1 @@
-# MurryCompSci
+We will be using this repository for basic class materials# MurryCompSci
