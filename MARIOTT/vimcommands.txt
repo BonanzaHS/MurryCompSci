@@ -1,0 +1,33 @@
+Motion
+    j,k,h,l
+    w,W,e,E,b,B
+    $,0,^
+    nG
+    ^F,^B,^f,^b,^U,^D
+Operators
+    x,2x
+    d,dw,db,dd,d$,d^
+    y,yy,yw,yb,y$,5yy
+    p,P,"2p
+    u,U
+Insert Mode
+    i,I,a,A,o,O
+    c,r,R
+EX Commands
+    :
+    :w filename
+    :e filename
+    :r filename
+    :wq,:q!,ZZ
+    :tabedit filename,gt,gT,ngt,:tabs,:tabclose
+Other Commands
+    v,vv,V
+    /,?
+VIM Start-up options
+    -o,-O : Open windows for each file
+Buffers
+Tabs, Windows
+Registers
+Marks
+Tags
+Macros

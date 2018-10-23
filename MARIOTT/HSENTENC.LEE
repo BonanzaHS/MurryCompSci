@@ -1,0 +1,15 @@
+~vim delete.c`  dd dw d2w d3w dd dW dE dB dd`  :wq`  vim hello.c`  dw u d2w u cw u c2w u dd u`  :q!`
+
+~vim insert.c`  iTextESC aTextESC oTextESC` :w`  IText at bolESC AText at eolESC OText new line aboveESC:wq`  vim change.c`  cd cw c2w c3w c$ cW cE cB c0`  :wq`  vim undo.c`  dw u d2w u cw u c2w u dd u`  :q!`
+
+~vim hello.c`  jjjjd3w A"hello, world\n"ESC`  :w jjllo return 0;ESC :wq`  gcc hello.c -o hello` ./hello`  hello,world`
+
+~vim filename.c` dw d2w d3w dd` :wq` vim file2.c`  O#include <stdio.h>ESC'  :make :wq`
+
+~vim file.c` c2W int main()ESC`  jjdd Oint a = 0;ESC`  yykkp` :w newfile.c ` jjjjAreturn 0;ESC :wq`
+
+~vim file.c`  I#include <stdio.h>ESC` jjOint main()ESC`  ochar c = 'v';ESC`  jj4wi"hello, word\n"ESC`  :w :make :q`
+
+~vim file.c` 5G goes to line 5` dd deletes current line` www is the same as 3w` c$ changes everything until eol` :wq writes and quits`  jjddO int a = 0;ESC`  yykkp` :w newfile.c :q`
+
+
