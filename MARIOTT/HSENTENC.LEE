@@ -10,6 +10,4 @@
 
 ~vim file.c`  I#include <stdio.h>ESC` jjOint main()ESC`  ochar c = 'v';ESC`  jj4wi"hello, word\n"ESC`  :w :make :q`
 
-~vim file.c` 5G goes to line 5` dd deletes current line` www is the same as 3w` c$ changes everything until eol` :wq writes and quits`  jjddO int a = 0;ESC`  yykkp` :w newfile.c :q`
-
 

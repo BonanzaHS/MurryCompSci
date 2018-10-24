@@ -1,10 +1,10 @@
 ~sudo apt-get update sudo apt-get install vim git curl`  sudo apt-get update sudo apt-get install build-essential` sudo apt-get install nethack-console`
 
-~vim hello.c`  i#include <stdio.h>ESC` :wq`  vim hello.c` jjjjA"hello, world\n"ESC`  :wq`
+~vim hello.c` i"#include <stdio.h>"ESC` :wq`  vim hello.c` jjjjA"hello, world\n"ESC`  :wq`
 
 ~gcc hello.c`  ./a.out`  rm a.out`  gcc hello.c -o hello`  ./hello`  rm hello`
 
-~git init`  git add hello.c`  git commit`  git clone github.com/cbasics.git`  cd cbasics/src/chapter01`  gcc helloworld.c -o helloworld ./helloworld`
+~git init`  git add hello.c`  git commit`  git clone github.com/cbasics.git`  cd cbasics ls cd src ls cd chapter01 ls`  gcc helloworld.c -o helloworld ./helloworld`
 
 ~mkdir programming cd programming touch hello.c` cp hello.c ../hello.c` cd .. gcc hello.c -o hello`  mkdir programming cd programming git clone github.com/cbasics.git cd cbasics`  rm hello.c rm programming/hello.c rm -R ./*`  touch file.s rm file.s vim file.s :q rm file.s touch ../file.s rm ../file.s`
 
