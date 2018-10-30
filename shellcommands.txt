@@ -5,12 +5,16 @@ Filesystem Commands
 
 System Administration Tools
     apt-get
+        sudo apt-get update
+        sudo apt-get install programname
 
 
 Programming Tools
     gcc, make, gdb
     cpp, cc, as, ld
     python, ruby, perl
+    git clone github.repository
+    git pull
 
 
 Raw data tools
