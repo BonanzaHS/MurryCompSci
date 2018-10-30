@@ -1,0 +1,21 @@
+Basic Unix Shell Commands
+Filesystem Commands
+    cd, ls, mkdir, rm, mv
+
+
+System Administration Tools
+    apt-get
+
+
+Programming Tools
+    gcc, make, gdb
+    cpp, cc, as, ld
+    python, ruby, perl
+
+
+Raw data tools
+    hexdump, objdump
+    ldd, readelf, xxd
+    gcore, strace
+    diff, cat
+    bc

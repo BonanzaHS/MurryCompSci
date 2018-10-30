@@ -1,7 +1,13 @@
 /*
  * Print the limits of the standard C type
  */
-
+// VIM Commands to practice
+//      r - replace
+//      x - delete
+//      f - find character
+//      / - find string
+///     i - insert mode
+//      cw - change word (delete word, insert mode)
 // Includes
 
 #include <float.h>
@@ -12,7 +18,6 @@
 /* Main */
 
 int main(void) {
-
     // Integers fom headers
 
     printf("From Standard Headers (<limits.h>, <float.h>):\n");
