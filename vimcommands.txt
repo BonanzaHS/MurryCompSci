@@ -1,18 +1,18 @@
 Motion
-    j,k,h,l
-    w,W,e,E,b,B
-    $,0,^
-    nG
-    ^F,^B,^f,^b,^U,^D
+    j,k,h,l     - Move cursor by one position
+    w,W,e,E,b,B - Move cursor on words (WORDS)
+    $,0,^       - Move cursor to eol/bol
+    nG          - Move cursor to n line number
+    ^F,^B,^f,^b,^U,^D - Move cursor to different parts of screen
 Operators
-    x,2x
-    d,dw,db,dd,d$,d^
-    y,yy,yw,yb,y$,5yy
-    p,P,"2p
-    u,U
+    x,2x    - Delete character under cursor
+    d,dw,db,dd,d$,d^    - Delete {motion}
+    y,yy,yw,yb,y$,5yy   - Copy
+    p,P,"2p - Paste
+    u,U     - Undo
 Insert Mode
     i,I,a,A,o,O
-    c,r,R
+    c,r,R   - Replace (delete) text with new text
 EX Commands
     :
     :w filename
@@ -21,8 +21,8 @@ EX Commands
     :wq,:q!,ZZ
     :tabedit filename,gt,gT,ngt,:tabs,:tabclose
 Other Commands
-    v,vv,V
-    /,?
+    v,vv,V  - Visual Mode
+    /,?     - Search for string 
 VIM Start-up options
     -o,-O : Open windows for each file
 Buffers

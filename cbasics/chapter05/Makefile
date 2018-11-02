@@ -1,4 +1,4 @@
-BIN = ../../bin
+BIN = ../bin
 ODIR = obj
 SUBDIRS = expr pointers strnfunc
 CC = cc

@@ -1,4 +1,4 @@
-BIN = ../../bin
+BIN = ../bin
 ODIR = obj
 SUBDIRS = rpncalc4-03 rpncalc4-04 rpncalc4-05 rpncalc4-06 rpncalc4-10 rpncalc4-11
 CC = cc
