@@ -1,0 +1,17 @@
+cd /mnt/c/Users/####/MurryCom.
+git pull
+sudo apt-get update
+sudo apt-get install splint
+cd cbasics/chapter02
+make
+./typelimits
+vim typelimits.c
+    :wq
+vim datatypes.c
+    Make some edits, add printf lines
+    :wq
+gcc datatypes.c -o datatypes
+
+Go try your hand at those quizzes if you can manage your way around these.Good
+luck you's guys.
+Please put the laptops back by the end of class~!
