@@ -1,0 +1,109 @@
+Basic File and Directory commands
+    # In Unix-based systems like Linux, EVERYTHING is a file. Files, themselves,
+are treated as flat arrays, or streams, of bytes, and are always representable
+to the user as a sequence of characters or hexadecimal digits. Each file has
+specific permissions which dictate which users may read, write, or
+execute a file. Files are located in directories, which are nothing more than
+character files listing out the files and directories located in the directory.
+
+    # FILE PERMISSIONS - Every file has permissions to restrict or allow read,
+write, and execute capabilities for each of owner user, owner group, other users
+users. The entire file permission is represented by a bit field, where each
+individual bit represents either read, write, or execute privelege to the
+specific group.
+        # _ - _ _ _ - _ _ _ - _ _ _
+        # ^ Special permission
+        #     ^ User owner read - write - execute
+        #             ^ Group read - write - execute
+        #                     ^ Other read - write - execute
+        # Examples:
+            # drw_rw_r__    -> ug=rw,  o=r, directory file
+            # _rwxrwxr__    -> ug=rwx, o=r
+            # _rw_rw_r__    -> ug=rw,  o=r
+            # _rw_______    -> u=rw, go= NOTHING ALLOWED
+
+    # TAB COMPLETION - Users can press the <Tab> key and the shell will attempt
+to complete the file or directory name. Double press <Tab> to see a list of
+conflicting completions (if any filenames match)
+
+
+### DIRECTORY COMMANDS ###
+    # Imporant directories
+    ~   # Home directory
+    /   # Root directory
+    .   # Current directory
+
+pwd # Print working directory
+
+ls  # List contents in directory
+    # Options
+    ls <directory>  # List visible files in <directory>
+    ls <file1> <file2> ...  # List files information for files <file1>...
+    ls -a   # List all files in current directory
+    ls -l   # List extra information about visible files, one per line
+    ls -al
+    ls -al | less   # Pipe output of ls command to paging program "less"
+    ll, la, l   # Aliases for common ls executions
+
+cd <directory> # Change current working directory to <directory>
+    cd  # Change current working directory (cwd) to home directory (~)
+    cd ~    # Same effect as above
+    cd /    # Change to root directory
+    cd -    # change to previous directory
+    cd ~/MurryCompSci/MARIOTT   # Change to MARIOTT in MurryCompSci git folder
+
+mkdir <directory>   # Create in current directory the new <directory>
+    # Options
+    mkdir ~/<directory> # Create in user's home directory the new <directory>
+    mkdir -m <permissions> <directory>
+        # Create new <directory> with user and group permissions <permission>
+
+rmdir <directory>    # Remove EMPTY directory named <directory>
+
+
+
+### FILE COMMANDS ###
+touch <file>    # Update access and modified times for file,
+                # Create empty <file> if it did not already exit
+
+cp <source> <destination>   # Copies source file to destination file
+    cp ~/hello.c ./programming/goodbye.c
+                # Copies "hello.c" from user's home directory
+                # To the directory "programming" in current directory
+                # with the filename "goodbye.c"
+    cp -r <sourceDirectory>/* <destinationDirectory>
+                # Recursively copy *ALL* files in <sourceDirectory>
+                # to the <destinationDirectory>
+
+mv <source> <destination>   # Moves source file to destination file
+    mv <filename> <NEWfilename> # Rename file <filename> to <NEWfilename>
+
+rm <filename>   # Removes PERMANENTLY <filename> from filesystem
+    rm <str>*   # Removes ALL files starting with <str> using * operator
+    rm -r <directory>   # Recursively removes ALL files in <directory>
+
+dd if=<source> of=<destination>
+    # Physically copy input file <source> file to output file <desitionation>
+    dd if=/dev/sda of=/mnt/<external>/backup.img
+        # Copies backup image named "backup.img" of entire harddrive
+        # to a connected external drive mounted at directory /mnt/<directory>
+    dd if=/dev/sda of=/dev/sdb conv=noerror,syn
+        # Physically copies first hard drive to second hard drive
+    dd if=/dev/random of=/dev/sdX
+        # Wipe harddrive "sdX" and replace contents with random bits
+
+ln <target> <linkname>  # Creates a "hard" link to <target> named <linkname>
+                        # Only 1 file exists, but both names point to it
+ln -s <target> <linkname>   # Create a "symbolic" link that lists <linkname>
+                            # as a shortcut to <target> file or directory.
+                            # "ls -l" command will show an 'l' in the
+                            # special permission field, and an arrow pointing
+                            # to actual target file or directory.
+                            # Check out the symlinks within /usr/bin
+                            # "ls -l /usr/bin | less"
+
+### SEARCH COMMANDS ###
+find -name <directory>/<file>   # Searches in <directory> for <file>
+                                # Find has many options for complex searches
+
+locate <file>   # Find location of <file>

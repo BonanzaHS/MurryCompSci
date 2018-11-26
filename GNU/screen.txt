@@ -1,0 +1,30 @@
+GNU Screen - Terminal Multiplexer. Create new Screen "windows" within same
+terminal window.
+
+screen
+
+screen -S <session> # Create new screen session with name <session>
+
+screen -x <user>/<session>  # Attach multiple terminals to <session>
+
+screen -ls  # List available Screen sessions
+
+
+### SCREEN INTERACTIVE COMMANDS ###
+<Ctrl-a> is the "escape character" that begins an interactive screen command.
+Follow the escape character with a single other key
+
+<Ctrl-a> c  # Create new Screen window
+
+<Ctrl-a> a  # Switch to previous window
+
+<Ctrl-a> n  # Switch to next numbered window
+
+<Ctrl-a> :  # Enter Screen configuration command
+
+<Ctrl-a> :multiuser on  # Allow multiple users to connect
+
+<Ctrl-a> :acladd <user> # Add user to list of users that can share session
+
+<Ctrl-a> :aclchg <user> -wx "#,?"
+<Ctrl-a> :aclchg <user> +x "colon,wall,detach"
