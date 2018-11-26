@@ -1,0 +1,74 @@
+Common User related commands
+    # In an interactive shell, the currently logged on user directs commands to
+    # the shell interpreter to execute. Every command at the command line must
+    # begin with the name of a program located in one of the $PATH directories.
+    # After a program name, optional or mandatory options can be given to the
+    # selected program to modify it's behavior.
+
+    # User commands and their effects are restricted by file permissions
+    # Each file has associated metadata that defines which permissions # are
+granted to the file owner, file group, and all other users.
+
+### BASIC USER INFORMATION ### id  # Prints name, ID, and group memberships for
+current user
+
+whoami  # Prints username only
+
+groups  # Prints groups current user belongs to
+
+who # Prints names for all users currently logged in to system
+
+
+### SWITCHING USERS ### su <username>   # Prompt for password for <username>,
+if successful switch user
+
+su  -   # Prompt for password for the "super user", also called "root" user
+
+sudo <command>  # "Super User Do" If current user is part of "sudo" group then
+# execute single <command> as the "root" user, # but do not switch from current
+user in the shell
+
+### CHANGING FILE ATTRIBUTES ### chmod [u,g,o]=[r,w,x] <file> # Change <file>
+permissions for owner, group, or other
+
+chmod XXX <file>    # Change <file> permissions using 3 octal digits "XXX" to
+represent # the file access attributes for user, group, and other # Octal
+digits meaning - Add these values to make an octal # digit representing the
+access permissions for each group # 0ctal 1 = 001 -> x -> execute # Octal 2 =
+010 -> w -> write # Octal 4 = 100 -> r -> read # 4+2 = 6 = 110 -> rw -> read
+and write # 4+1 = 5 = 101 -> rx -> read and execute # 4+2+1 = 7 = 111 -> rwx ->
+read, write, and execute # Put 3 octal digits together to make full permission
+list # 777 -> ugo=rwx # 755 -> u=rwx, go=rx # 664 -> ug=rw, o=r # 640 -> u=rw,
+g=r # 711 -> u=rwx, og=x
+
+chown <username> <file> # Change the <file> owner to <username>
+
+chown <username>:<group> <file> # Change <file> owner to <username> # and group
+owner to <group>
+
+chgrp <group> <file>    # Change the group owner of <file> to <group>
+
+chgrp -r <group> <directory>    # Change the group owner of <directory> # and
+every file in <directory>
+
+touch <file>    # Change access and modified time of <file> to current # time,
+or create <file> if it did not already exist
+
+
+### SYSTEM CONTEXT COMMANDS ### arch    # Print out processor type name about
+the system
+
+nproc   # Print out the number of processors
+
+uname   # Print out operating system information
+
+hostname    # Print out name of host computer
+
+date    # Print out current date and time
+
+ps      # Print out processes started by user
+ps -a   # Print out all current processes
+
+kill <pid>  # Send signal to process <pid>
+
+top     # Interactive program that displays process information
