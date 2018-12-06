@@ -7,6 +7,7 @@ int main()
     size_t  len = 0;
     ssize_t read;
 
+    printf("Please enter a line of text:\n");
     getline(&line, &len, stdin);
     printf("The user typed in this line:\n%s", line);
 
