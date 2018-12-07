@@ -1,0 +1,16 @@
+GNU GCC packages
+gcc, c++
+cpp
+
+ctags
+gcc-ar, gcc-nm, gcc-ranlib
+gcov, gcov-dump, gcov-tool
+locale, localedef
+rpcgen
+
+/sbin (Maybe should be in binutils)
+iconvconfig
+nscd
+sln
+zdump
+zic

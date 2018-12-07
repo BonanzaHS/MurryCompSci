@@ -1,0 +1,65 @@
+Screen - GNU mutliplexor for command-line
+
+Screen basics
+    Screen allows for users to simultaneously run multiple terminal sessions
+    Screen acts like it's any other terminal, but with the press of C-a, everything become a screen command
+    Every screen command-line option has a corresponding screen shortcut
+
+Screen Default Commands
+    *Screen commands are prefaced with *THE* control character (C-a)  followed by a SINGLE key sroke
+    *Therefore, screen commands have two key presses, but the 2nd determines which screen option is executed
+    screen -list listing out all the current screen sessions 
+    *screen default key configuration 
+    ?   - Help
+    \   - Kill all windows and terminal screen
+    ,   - Shows where screen came from, where it's gone to, and why you can use it
+    :   - Enter command line mode
+    |   - Split window vertically
+    *   - Show all currently attached displays
+    c   - Create new screen windows
+    w   - Show list of Windows
+    i   - Dipslay information about current window
+    d   - Detach session
+    k   - Destroy current window
+    X   - Kill current region 
+    l   - Fully refresh current window
+    SPACE/n - Switch to next window
+    BACKSPACE/C-h/p - Switch to previous window
+    Q   - Delete all regions but current
+    S   - Split region in to two horizontally
+    t   - Show system information
+    '
+    "
+    0-9
+    -
+    TAB
+    a   - Send C-a to current session
+    A   - Create/Change name for current window
+    b   - send Break
+    B   - reopen terminal line AND send Break
+    C   - Clear screen
+    d   - Detach THIS terminal session
+    DD  - Detach and logout 
+    ]   - Paste
+    f   - Flow options
+    F   - Resize window to current region size
+    C-g - Toggle screen visual bell mode
+    h   - Create hardcopy of current window
+    H   - Begins/ends loggin for current window
+    M   - Toggle monitoring of current window
+    q   - Send C-q command to current window
+    r   - Toggle automatic margins (Does WAY DIFFERENT STUFF as cmd-line option)
+    s   - Send C-s to current window
+    v   - Version and compilation date
+    C-v - Enter digraph
+    x   - Lock current terminal
+    z   - Suspend screen (in BSD compatible OS)
+    .   - Write out termcap file
+    [/ESC   - Enter/copy scrollback mode
+    {/} - Copy and paste a previous command
+    >   - Write paste buffer to file
+    <   - Reads screen-exchange into paste buffer
+    =   - Removes files used by '>' and '<' commands
+    _   - Start/stop monitoring of current window for inactivity
+
+//No Screen configuration file options

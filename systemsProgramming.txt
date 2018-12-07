@@ -1,0 +1,7 @@
+Systems Programming
+
+System Calls
+
+
+    strace <arguments>
+        strace will show all the system calls that program uses

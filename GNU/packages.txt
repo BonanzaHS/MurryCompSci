@@ -1,0 +1,34 @@
+FLTK
+freeGLUT
+freeTalk
+freeXL
+idUtils
+iftop
+inetUtils
+key-mon
+lab
+live-streamer
+mcomix
+mcron
+minetest
+moreUtils
+motti
+mutt
+mygui
+nagios
+net-tools
+ocrad - optical character recognition
+openmw - Morrow Wind Engine
+parted
+pciUtils
+plotUtils
+potrace
+powwow
+procenv
+procps
+progress
+pscircle
+psmisc
+pth
+pv
+

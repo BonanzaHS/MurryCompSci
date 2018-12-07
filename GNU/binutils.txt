@@ -1,0 +1,28 @@
+GNU BinUtils
+
+ld - Linker
+as - Assembler
+ar - Archiver
+
+addr2line
+c++filt
+dlltool
+gold
+gprof
+ld.bfd, ldd, ld.go
+nlmconv
+nm
+objcopy
+objdump
+pldd
+ranlib
+readelf
+size
+sprof
+strings
+strip
+windmc
+windres
+
+Extra packages
+ht

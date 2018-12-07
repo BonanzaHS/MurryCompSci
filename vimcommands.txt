@@ -26,6 +26,7 @@ Other Commands
 VIM Start-up options
     -o,-O : Open windows for each file
 Buffers
+    :e
 Tabs, Windows
 Registers
 Marks

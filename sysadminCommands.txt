@@ -1,0 +1,29 @@
+System Administration Commands
+
+Users
+
+
+File Permissions
+
+
+
+Back-up and Compression
+    7zip
+        sudo apt-get install p7zip-full
+    rsync
+    CloneZilla
+
+System Monitoring
+    top
+    vmstat
+    w $USER
+    uptime
+    ps -a
+    free
+    iostat
+    pmap
+    tcpdump
+    iostat
+    mpstat
+
+
