@@ -9,7 +9,7 @@ int main()
 
     printf("Please enter a line of text:\n");
     getline(&line, &len, stdin);
-    printf("The user typed in this line:\n%s", line);
+    printf("the user is a dumb dumb\n%s", line);
 
     free(line);
     return 0;
