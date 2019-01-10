@@ -15,7 +15,7 @@
  *       Revision:  none
  *       Compiler:  gcc
  *
- *         Author:  YOUR NAME (), 
+ *         Author:  Brandon Murry
  *   Organization:  Bonanza High School
  *
  *==========================================================================
