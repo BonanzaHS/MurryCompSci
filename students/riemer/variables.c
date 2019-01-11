@@ -12,7 +12,7 @@ int main()
     m = 2.5;
     a = 'e';
 
-    printf("int x = %i\n", x);
+    printf("i am gay");
     printf("float m = %f\n", m);
     printf("char a = %c\n", a);
     printf("character array str = %s\n", str);
