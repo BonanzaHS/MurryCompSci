@@ -54,10 +54,8 @@
 
 int a, bee, newName;
 //Place your student work here
-int i1, i2, i3;
-char c1, c2, c3;
-float f1, f2, f3;
-double d1, d2, d3;
+
+
 
 
 /*--3.DEFINITIONS----------------STUDENT-INSTRUCTIONS-----------------------
@@ -70,26 +68,15 @@ double d1, d2, d3;
 ----END--------------------------STUDENT-INSTRUCTIONS---------------------*/
 
 // Write 4 assignment statements using your variable name and a constant
-//NAME = DATATYPE;
 a = 5;
-i1 = 100;
-i2 = 34;
-i3 = 4;
 
-c1 = 'd';
-c2 = 'b';
-c3 =
-
-f1 = 1.4532;
-f2 = 43.53;
 
 
 
 // Write 3 assignment statements usng mathematical operators, constants,
 // and your variable names.
 bee = 5 + a * newName;
-i1 = 100
-i1 = i1 - 25;
+
 
 
 
