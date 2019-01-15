@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <stddef.h>
 
 int main()
 {
-    int x, y, z;   // Whole number integers
-    float m, n, o; // Scientific notation
-    char a, b, c;  // Single byte character
-    char str[] = "Hello, 3rd period CS";
+    int x, y, z;
+    float m, n, o;
+    char a, b, c;
+    char str[20] = "Hello, world";
 
     x = 10;
     m = 2.5;
@@ -19,20 +18,3 @@ int main()
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
