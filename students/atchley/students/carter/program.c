@@ -15,7 +15,7 @@
  *       Revision:  none
  *       Compiler:  gcc
  *
- *         Author:  Brandon Murry
+ *         Author:  YOUR NAME (), 
  *   Organization:  Bonanza High School
  *
  *==========================================================================
@@ -54,8 +54,7 @@
 
 int a, bee, newName;
 //Place your student work here
-char c1, c2, c3;
-float f1, floaty, float1;
+
 
 
 
