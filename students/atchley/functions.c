@@ -9,7 +9,7 @@ int squared(int a)
 
 int main()
 {
-    x = 6;
+    x = 5;
     printf("x squared = %i\n", squared(x));
     return 0;
 }
