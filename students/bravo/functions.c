@@ -2,14 +2,13 @@
 
 int x, y;
 
-int squared(int a)
-{
+int squared(int a){
     return a*a;
 }
 
 int main()
 {
-    x = 6;
+    x = 45;
     printf("x squared = %i\n", squared(x));
     return 0;
 }
